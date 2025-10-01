@@ -83,7 +83,7 @@ resource "google_monitoring_alert_policy" "composer_dag_run_duration" {
   }
 
   user_labels = {
-    environment = "tlc-prd-data-01-4e80-composer-environment"
+    environment = "composer-environment"
   }
   
   enabled = true

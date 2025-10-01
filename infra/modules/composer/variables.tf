@@ -43,8 +43,7 @@ variable "web_server_allowed_ip_range" {
 }
 
 variable "network" {
-  type = string
-  default = "vpc-tlc-hub-prd"
+  type = string  
 }
 
 variable "subnetwork" {

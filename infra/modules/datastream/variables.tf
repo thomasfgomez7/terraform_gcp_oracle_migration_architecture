@@ -25,8 +25,7 @@ variable "oracle_port" {
 
 variable "psc_datastream" {
     description = "Private Service Connect resource path for Datastream."
-    type        = string
-    default = "projects/tlc-prd-data-01/locations/us-east1/privateConnections/tlc-prd-data-01-managed-services-datastream"
+    type        = string    
 }
 
 

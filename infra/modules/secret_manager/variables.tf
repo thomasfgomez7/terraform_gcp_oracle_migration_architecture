@@ -22,8 +22,8 @@ variable "secrets_ids" {
 }
 
 variable "secrets_data" {
-description = "Map of secret values. Keys must match secrets_map keys. This variable is sensitive and should not be committed."
-type = map(string)
-sensitive = true
-default = {}
+    description = "Map of secret values. Keys must match secrets_map keys. This variable is sensitive and should not be committed."
+    type = map(string)
+    sensitive = true
+    default = {}
 }
