@@ -1,0 +1,22 @@
+{
+    "grupo-11-A": {
+        "tables": [
+            {
+                "oracle_name": "SCHEMA.TABLA",
+                "bq_name": "DATASET.TABLA",
+                "query": "SELECT * FROM SCHEMA.TABLA",
+                "reload": false,
+                "date_column": "COLUMNAFECHA",
+                "start_date": "2023-01-01"
+            },
+            {
+                "oracle_name": "SCHEMA.TABLA",
+                "bq_name": "DATASET.TABLA",
+                "query": "SELECT * FROM SCHEMA.TABLA",
+                "reload": true,
+                "date_column": "COLUMNAFECHA",
+                "start_date": "2023-01-01"
+            }            
+        ]
+    }
+}
