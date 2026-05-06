@@ -17,7 +17,6 @@ variable "labels" {
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Oracle connection profile general variables
-
 variable "oracle_port" {
     description = "The port of the Oracle database."
     type        = number
@@ -110,4 +109,42 @@ variable "bigquery_conn_profile_name" {
 variable "bigquery_conn_profile_display_name" {
     description = "The display name of the BigQuery connection profile."
     type        = string
+}
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Streams variables
+variable "crmqa_schema" {
+    description = "Schema for tables migration from Oracle to BigQuery"
+    type = string
+}
+
+variable "stream_state" {
+    description = "Stream state"
+    type = string
+}
+
+variable "source_connection_profile_id" {
+    description = "ID source connection profile"
+    type = string 
+}
+
+variable "oracle_tables_list" {
+    description = "Lista de tablas a incluir en el stream"
+    type = list(string)
+}
+
+variable "destination_connection_profile_id" {
+    description = "BigQuery connection profile ID"
+    type = string
+}
+
+variable "data_freshness" {
+    description = "Update time to migrate data between source and destination"
+    type = number
+}
+
+variable "bq_dataset_id" {
+    description = "ID for BigQuery dataset"
+    type = string
 }

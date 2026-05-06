@@ -37,11 +37,6 @@ variable "image_version" {
   default     = "composer-3-airflow-2.10.5-build.3"
 }
 
-variable "web_server_allowed_ip_range" {
-  description = "CIDR block allowed to access the Airflow web UI"
-  type        = string
-}
-
 variable "network" {
   type = string  
 }
